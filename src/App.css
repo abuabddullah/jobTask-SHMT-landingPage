@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background-color: #e0c3fc;
+  background-image: linear-gradient(135deg, #e0c3fc 0%, #ffffff 70%, #fd7777 110%);
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -15,7 +18,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +34,56 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+
+
+
+/* .mainBoundary {
+  display: grid; 
+  grid-template-columns: 0.4fr 0.7fr 1.9fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+} */
+
+/* 
+.mainBoundary {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 1.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . ."; */
+
+.mainBoundary {
+  display: grid;
+  grid-template-columns: 120px 1fr 1.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . .";
+    background-color: rgba(240, 244, 247,.2);
+}
+
+
+
+.wraper {
+  background-color: rgba(240, 244, 247,.3);
+
+}
+
+
+.selected {
+  background-color: rgba(240, 244, 247,.65);
+
 }
